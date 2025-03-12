@@ -18,5 +18,22 @@
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "typescript": "^5.8.2"
+  },
+  "release": {
+    "branches":[
+      "+([0-9])?(.{+([0-9]),x}).x",
+      "master",
+      "next",
+      "next-major",
+      {
+        "name": "beta",
+        "prerelease": true
+      },
+      {
+        "name": "alpha",
+        "prerelease": true
+      }
+    ],
+    "repositoryUrl": "https://github.com/alexander-lovdahl-xenit/semantic-release.git"
   }
 }
